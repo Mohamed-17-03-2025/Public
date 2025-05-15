@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saasthara Pro Max</title>
+    <link rel="Stylesheet" href="{(url_for('styles', filename= 'style.css'))}">
+</head>
+
+<body>
+
+    <h1>ATS Scorer</h1>
+
+    <form action="/" method="post" enctype="multipart/form-data">
+
+        <input type="file" name="CV" accept="application/pdf" required><br>
+        <textarea name="job_description" rows="4" placeholder="Enter job description..." required></textarea>
+        <button type="submit">Generate Score</button>
+
+    </form>
+
+    {% if score is not none%}
+        <h3 id="scoretext">Similarity score: {( score )}</h3>
+    {%endif%}
+
+
+</body>
+
+</html>
