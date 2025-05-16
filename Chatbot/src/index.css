@@ -1,0 +1,17 @@
+:root
+{
+
+}
+
+body
+{
+  background-color: #e5e6f2;
+  color: #323250;
+  height: 100vh;
+}
+
+.suggestion-card
+{
+  padding: 15px !important;
+  cursor: pointer;
+}
